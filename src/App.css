@@ -202,7 +202,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 1;
+    z-index: 5;
     position: fixed;
     background-color: var(--primary-color);
     width: 100%;
@@ -253,7 +253,7 @@
   .form__input-message {
     height: 20rem;
     resize: vertical;
-    max-width: 80rem;
+    max-width: 120rem;
   }
 
   .form__span {
