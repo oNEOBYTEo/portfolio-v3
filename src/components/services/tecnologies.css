@@ -1,0 +1,153 @@
+.tecnologies {
+  background-color: var(--secondary-color);
+  padding: var(--padding-mobile);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tecnologies__container-left {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.tecnologies__title {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  letter-spacing: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+}
+
+.tecnologies__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tecnologies__item {
+  width: 100%;
+  max-width: 7rem;
+}
+
+.tecnologies__icon {
+  max-width: 7rem;
+}
+
+.tecnologies__img {
+  display: none;
+}
+
+.tecnologies__conatiner-right {
+  background-color: var(--primary-color);
+  padding: 2rem 3rem;
+  letter-spacing: 2px;
+  border-radius: 0.3rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 600px) {
+  .tecnologies {
+    gap: 10rem;
+  }
+
+  .tecnologies__container-left {
+    gap: 6rem;
+  }
+
+  .tecnologies__title {
+    font-size: 3rem;
+  }
+
+  .tecnologies__item {
+    width: 100%;
+    max-width: 10rem;
+  }
+
+  .tecnologies__icon {
+    max-width: 100%;
+  }
+
+  .tecnologies__conatiner-right {
+    padding: 5rem 7rem;
+
+    height: 35rem;
+  }
+
+  .tecnologies__subtitle {
+    font-size: 2.5rem;
+  }
+
+  .tecnologies__paragraph {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .tecnologies {
+    background-color: var(--secondary-color);
+    gap: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    padding: 7.4rem 0 2rem;
+  }
+
+  .tecnologies__container-left {
+    padding-left: 14.8rem;
+  }
+
+  .tecnologies__img {
+    display: initial;
+  }
+
+  .tecnologies__title {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-size: 4.4rem;
+    left: 0;
+    letter-spacing: 1rem;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    transform: translate(calc(-50% + 44px), -50%) rotate(-90deg);
+    width: 50rem;
+  }
+
+  .tecnologies__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .tecnologies__item {
+    width: 18rem;
+  }
+
+  .tecnologies__conatiner-right {
+    background-color: var(--primary-color);
+    color: var(--third-color);
+    text-align: right;
+    align-self: center;
+    padding: 2rem 3rem;
+    padding-right: 7.4rem;
+    height: max-content;
+    min-height: 30rem;
+    text-align: right;
+  }
+
+  .tecnologies__subtitle {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .tecnologies__paragraph {
+    font-size: 1.6rem;
+  }
+}

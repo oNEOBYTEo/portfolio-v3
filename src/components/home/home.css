@@ -1,0 +1,150 @@
+.home {
+  padding: var(--padding-mobile);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  height: calc(100vh - 72px);
+}
+
+.home__avatar {
+  width: 100%;
+  max-width: 40rem;
+  order: 3;
+}
+
+.home__title {
+  font-size: 2.8rem;
+}
+
+.home__list {
+  order: 2;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: -2rem;
+}
+
+.home__icon {
+  width: 100%;
+}
+
+/* .home__list {
+  display: flex;
+  justify-content: space-between;
+ 
+  padding: 1rem;
+  width: 50%;
+} */
+
+.home__item {
+  width: 4rem;
+}
+/* .home {
+  padding: 14.8rem var(--padding-desktop) 0;
+  position: relative;
+  min-height: 100vh;
+  color: var(--third-color);
+  display: flex;
+  justify-content: space-between;
+}
+
+.home__title {
+  position: relative;
+  top: 40px;
+  align-self: flex-start;
+  font-size: 6.4rem;
+  width: 50%;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.home__list {
+  align-self: center;
+  list-style: none;
+  display: grid;
+  gap: 6rem;
+}
+
+.home__item {
+  width: 5rem;
+}
+
+.home__avatar {
+  position: absolute;
+  width: 52rem;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  margin: 0 auto;
+} */
+
+@media (min-width: 600px) {
+  .home {
+    position: relative;
+  }
+
+  .home__avatar {
+    order: initial;
+  }
+  .home__list {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    order: initial;
+    display: flex;
+    right: 5%;
+    flex-direction: column;
+    gap: 2rem;
+    width: max-content;
+    margin-bottom: 0;
+  }
+
+  .home__title {
+    font-size: 5.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .home {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 0;
+    padding: 14.8rem 14.8rem 0;
+    height: calc(100vh + 72px);
+  }
+  .home__list {
+    position: static;
+    align-self: center;
+  }
+
+  .home__avatar {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .home__title {
+    font-size: 4rem;
+    width: 40rem;
+  }
+
+  .home__item {
+    width: 5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .home__title {
+    font-size: 6rem;
+    width: 80rem;
+  }
+  .home__avatar {
+    max-width: 50rem;
+  }
+}
