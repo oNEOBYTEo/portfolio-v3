@@ -12,8 +12,8 @@ function App() {
   const [isShow, setIsShow] = useState(true);
   const { scrollY } = useScroll();
   const style = {
-    paddingTop: scrollY > 70 && '1rem',
-    paddingBottom: scrollY > 70 && '1rem',
+    paddingTop: scrollY > 70 && screen.width > 1024 ? '1rem' : '1.5rem',
+    paddingBottom: scrollY > 70 && screen.width > 1024 ? '1rem' : '1.5rem',
   };
   return (
     <>
